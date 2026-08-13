@@ -1,255 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Menu | Taste Haven Restaurant</title>
-
-    <meta name="description"
-        content="Explore the delicious menu categories at Taste Haven Restaurant, featuring burgers, pizza, pasta, BBQ, and more." />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- CSS path -->
+    <meta name="description" content="Explore the full menu at Taste Haven Restaurant featuring burgers, pizza, pasta, BBQ, desserts, drinks, and more." />
+    
+    <!-- External Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- CSS Link Updated for Root Directory -->
     <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-    <!-- ================= HEADER ================= -->
-
+  </head>
+  <body>
     <header class="site-header container">
-
-        <a class="brand" href="index.html">
-            Taste <span>Haven</span>
-        </a>
-
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
-
-            <a class="nav-link" href="index.html">Home</a>
-
-            <a class="nav-link" href="about.html">About Us</a>
-
-            <a class="nav-link active" href="menu.html">Menu</a>
-
-            <a class="nav-link" href="gallery.html">Gallery</a>
-
-            <a class="nav-link" href="blog.html">Blog</a>
-
-            <a class="nav-link" href="contact.html">Contact</a>
-
-        </nav>
-
-        <a class="btn btn-primary btn-small" href="reservations.html">
-            Book a Table
-        </a>
-
+      <a class="brand" href="index.html">Taste <span>Haven</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link active" href="menu.html">Menu</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
     </header>
 
-
-    <!-- ================= MAIN ================= -->
-
     <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <p class="breadcrumbs">
+            <a href="index.html">Home</a> / Menu
+          </p>
+          <h1>Our Menu</h1>
+          <p>Discover our delicious offerings crafted with fresh ingredients and authentic flavors.</p>
+          
+          <div class="menu-category-nav">
+            <a class="menu-category-link" href="burgers.html">Burgers</a>
+            <a class="menu-category-link" href="pizza.html">Pizza</a>
+            <a class="menu-category-link" href="pasta.html">Pasta</a>
+            <a class="menu-category-link" href="bbq.html">BBQ</a>
+            <a class="menu-category-link" href="sandwiches.html">Sandwiches</a>
+            <a class="menu-category-link" href="desserts.html">Desserts</a>
+            <a class="menu-category-link" href="drinks.html">Drinks</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- PAGE HEADER -->
+      <!-- Category Overview Grid -->
+      <section class="section container">
+        <div class="grid grid-3">
+          
+          <!-- Burgers -->
+          <article class="card">
+            <img src="br1.jpg" alt="Burgers Category" loading="lazy" />
+            <h3>Burgers</h3>
+            <p>Juicy, handcrafted patties served with fresh toppings and toasted buns.</p>
+            <a href="burgers.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Burgers</a>
+          </article>
 
-        <section class="page-header">
+          <!-- Pizza -->
+          <article class="card">
+            <img src="pi1.jpg" alt="Pizza Category" loading="lazy" />
+            <h3>Pizza</h3>
+            <p>Freshly baked artisan pizzas topped with premium cheeses and fresh herbs.</p>
+            <a href="pizza.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Pizza</a>
+          </article>
 
-            <div class="container">
+          <!-- Pasta -->
+          <article class="card">
+            <img src="pas1.jpg" alt="Pasta Category" loading="lazy" />
+            <h3>Pasta</h3>
+            <p>Rich and creamy handcrafted pasta dishes made with authentic sauces.</p>
+            <a href="pasta.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Pasta</a>
+          </article>
 
-                <p class="breadcrumbs">
-                    <a href="index.html">Home</a>
-                    / Menu
-                </p>
+          <!-- BBQ -->
+          <article class="card">
+            <img src="bq1.jpg" alt="BBQ Category" loading="lazy" />
+            <h3>BBQ</h3>
+            <p>Sizzling grilled specialties spiced to perfection over open flames.</p>
+            <a href="bbq.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore BBQ</a>
+          </article>
 
-                <h1>Our Delicious Menu</h1>
+          <!-- Sandwiches -->
+          <article class="card">
+            <img src="san1.jpg" alt="Sandwiches Category" loading="lazy" />
+            <h3>Sandwiches</h3>
+            <p>Loaded club sandwiches and grilled melts packed with savory flavors.</p>
+            <a href="sandwiches.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Sandwiches</a>
+          </article>
 
-                <p>
-                    Explore our categories crafted with fresh ingredients,
-                    authentic flavors, and passion.
-                </p>
+          <!-- Desserts -->
+          <article class="card">
+            <img src="des.jpg" alt="Desserts Category" loading="lazy" />
+            <h3>Desserts</h3>
+            <p>Decadent cakes, pastries, and sweet treats to satisfy your cravings.</p>
+            <a href="desserts.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Desserts</a>
+          </article>
 
-            </div>
+          <!-- Drinks -->
+          <article class="card">
+            <img src="di.jpg" alt="Drinks Category" loading="lazy" />
+            <h3>Drinks</h3>
+            <p>Refreshing juices, creamy shakes, coffee, and chilled mocktails.</p>
+            <a href="drinks.html" class="btn btn-secondary btn-small" style="margin-top: 10px;">Explore Drinks</a>
+          </article>
 
-        </section>
-
-
-        <!-- ================= MENU CATEGORIES LIST ================= -->
-
-        <section class="section container">
-
-            <div class="menu-list">
-
-                <!-- Burgers Category Item -->
-                <div class="menu-item">
-                    <img src="br1.jpg" alt="Burgers Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Burgers</strong>
-                        <p>Juicy, handcrafted patties served with fresh toppings and toasted buns.</p>
-                    </div>
-                    <a href="burgers.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- Pizza Category Item -->
-                <div class="menu-item">
-                    <img src="pi1.jpg" alt="Pizza Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Pizza</strong>
-                        <p>Freshly baked artisan pizzas topped with premium cheeses and fresh herbs.</p>
-                    </div>
-                    <a href="pizza.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- Pasta Category Item -->
-                <div class="menu-item">
-                    <img src="pas1.jpg" alt="Pasta Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Pasta</strong>
-                        <p>Rich and creamy handcrafted pasta dishes made with authentic sauces.</p>
-                    </div>
-                    <a href="pasta.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- BBQ Category Item -->
-                <div class="menu-item">
-                    <img src="bq1.jpg" alt="BBQ Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>BBQ</strong>
-                        <p>Smoky, tender, and grilled to perfection.</p>
-                    </div>
-                    <a href="bbq.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- Sandwiches Category Item -->
-                <div class="menu-item">
-                    <img src="san1.jpg" alt="Sandwiches Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Sandwiches</strong>
-                        <p>Layered with fresh ingredients and toasted to crispy perfection.</p>
-                    </div>
-                    <a href="sandwiches.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- Desserts Category Item -->
-                <div class="menu-item">
-                    <img src="des.jpg" alt="Desserts Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Desserts</strong>
-                        <p>Sweet treats and decadent cakes to finish your meal right.</p>
-                    </div>
-                    <a href="desserts.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-                <!-- Drinks Category Item -->
-                <div class="menu-item">
-                    <img src="di.jpg" alt="Drinks Category" loading="lazy">
-                    <div class="menu-item-content">
-                        <strong>Drinks</strong>
-                        <p>Refreshing beverages, mocktails, and fresh juices.</p>
-                    </div>
-                    <a href="drinks.html" class="btn btn-primary btn-small">Explore</a>
-                </div>
-
-            </div>
-
-        </section>
-
+        </div>
+      </section>
     </main>
 
-
-    <!-- ================= NEWSLETTER ================= -->
-
+    <!-- Newsletter -->
     <section class="newsletter container">
+      <h2>Join Our Newsletter</h2>
+      <p>Stay updated with our latest offers and delicious recipes.</p>
 
-        <h2>
-            Join Our Newsletter
-        </h2>
-
-        <p>
-            Stay updated with our latest offers and delicious recipes.
-        </p>
-
-        <form id="newsletterForm">
-
-            <label for="newsletterEmail" class="sr-only">Email Address</label>
-            <input
-                type="email"
-                id="newsletterEmail"
-                placeholder="Enter your Email Address"
-                required
-            >
-
-            <button class="btn btn-primary" type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
+      <form id="newsletterForm">
+        <label for="newsletterEmail" class="sr-only">Email Address</label>
+        <input
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your Email Address"
+          required
+        >
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
+    <!-- Footer -->
     <footer>
-
-        <div class="container footer-grid">
-
-            <div class="footer-box">
-                <h3>Taste Haven</h3>
-                <p>Comfort food, crafted with care and served with heart.</p>
-            </div>
-
-            <div class="footer-box">
-                <h3>Quick Links</h3>
-                <div class="footer-links">
-                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-                    <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-                    <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
-                    <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
-                    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-                </div>
-            </div>
-
-            <div class="footer-box">
-                <h3>Opening Hours</h3>
-                <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
-                <p>10:00 AM - 11:00 PM</p>
-                <br>
-                <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
-                <p>9:00 AM - 12:00 AM</p>
-            </div>
-
-            <div class="footer-box">
-                <h3>Follow Us</h3>
-                <div class="footer-links">
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> Twitter</a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a>
-                </div>
-            </div>
-
+      <div class="container footer-grid">
+        <!-- Restaurant Info -->
+        <div class="footer-box">
+          <h3>Taste Haven</h3>
+          <p>Comfort food, crafted with care and served with heart.</p>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
+        <!-- Quick Links -->
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </div>
         </div>
 
+        <!-- Opening Hours -->
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
+          <p>10:00 AM - 11:00 PM</p>
+          <br>
+          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
+          <p>9:00 AM - 12:00 AM</p>
+        </div>
+
+        <!-- Follow Us -->
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="footer-links">
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
+      </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JS Link -->
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
