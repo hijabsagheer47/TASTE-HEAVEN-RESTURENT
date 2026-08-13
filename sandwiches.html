@@ -1,596 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Sandwiches | Taste Haven Restaurant</title>
-
-    <meta name="description"
-        content="Explore Taste Haven Restaurant's signature sandwiches and handheld favorites." />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-
-    <!-- ================= HEADER ================= -->
-
+    <title>Drinks | Taste Haven Restaurant</title>
+    <meta name="description" content="Discover Taste Haven Restaurant's refreshing drinks, juices, shakes, coffee, mocktails and chilled beverages." />
+    
+    <!-- External Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="site-header container">
-
-        <a class="brand" href="index.html">
-            Taste <span>Haven</span>
-        </a>
-
-        <button class="nav-toggle" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-        <nav class="site-nav" aria-label="Primary navigation">
-
-            <a class="nav-link" href="index.html">Home</a>
-
-            <a class="nav-link" href="about.html">About Us</a>
-
-            <a class="nav-link active" href="menu.html">Menu</a>
-
-            <a class="nav-link" href="gallery.html">Gallery</a>
-
-            <a class="nav-link" href="blog.html">Blog</a>
-
-            <a class="nav-link" href="contact.html">Contact</a>
-
-        </nav>
-
-        <a class="btn btn-primary btn-small" href="reservations.html">
-            Book a Table
-        </a>
-
+      <a class="brand" href="index.html">Taste <span>Haven</span></a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About Us</a>
+        <a class="nav-link active" href="menu.html">Menu</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
     </header>
 
-
-    <!-- ================= MAIN ================= -->
-
     <main>
+      <!-- Page Header -->
+      <section class="page-header">
+        <div class="container">
+          <p class="breadcrumbs">
+            <a href="index.html">Home</a> / 
+            <a href="menu.html">Menu</a> / 
+            Drinks
+          </p>
+          <h1>Drinks</h1>
+          <p>Refresh yourself with our delicious juices, creamy shakes, coffee, mocktails and chilled beverages.</p>
+          
+          <div class="menu-category-nav">
+            <a class="menu-category-link" href="burgers.html">Burgers</a>
+            <a class="menu-category-link" href="pizza.html">Pizza</a>
+            <a class="menu-category-link" href="pasta.html">Pasta</a>
+            <a class="menu-category-link" href="bbq.html">BBQ</a>
+            <a class="menu-category-link" href="sandwiches.html">Sandwiches</a>
+            <a class="menu-category-link" href="desserts.html">Desserts</a>
+            <a class="menu-category-link active" href="drinks.html">Drinks</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- PAGE HEADER -->
+      <!-- Category Hero -->
+      <section class="section container category-hero category-hero--balanced">
+        <div class="feature-panel feature-panel--text">
+          <p class="eyebrow">Refreshing Drinks</p>
+          <h2>Cool, Fresh & Delicious Drinks</h2>
+          <p>Enjoy freshly prepared juices, creamy shakes, refreshing mocktails, iced beverages and delicious drinks that are perfect with every meal.</p>
+        </div>
+        <img src="./images/dr9.png" alt="Fresh Orange Juice" />
+      </section>
 
-        <section class="page-header">
-
-            <div class="container">
-
-                <p class="breadcrumbs">
-                    <a href="index.html">Home</a>
-                    /
-                    <a href="menu.html">Menu</a>
-                    / Sandwiches
-                </p>
-
-                <h1>Sandwiches</h1>
-
-                <p>
-                    Layered favorites packed with fresh ingredients and bold flavor.
-                </p>
-
-
-                <!-- CATEGORY NAVIGATION -->
-
-                <div class="menu-category-nav">
-
-                    <a class="menu-category-link" href="burgers.html">
-                        Burgers
-                    </a>
-
-                    <a class="menu-category-link" href="pizza.html">
-                        Pizza
-                    </a>
-
-                    <a class="menu-category-link" href="pasta.html">
-                        Pasta
-                    </a>
-
-                    <a class="menu-category-link" href="bbq.html">
-                        BBQ
-                    </a>
-
-                    <a class="menu-category-link active" href="sandwiches.html">
-                        Sandwiches
-                    </a>
-
-                    <a class="menu-category-link" href="desserts.html">
-                        Desserts
-                    </a>
-
-                    <a class="menu-category-link" href="drinks.html">
-                        Drinks
-                    </a>
-
-                </div>
-
+      <!-- Menu List -->
+      <section class="section container">
+        <div class="menu-list">
+          <div class="menu-item">
+            <img src="./images/dr1.png" alt="Fresh Orange Juice" />
+            <div class="menu-item-content">
+              <strong>Fresh Orange Juice</strong>
+              <p>Freshly squeezed oranges served chilled.</p>
             </div>
+            <span class="price">Rs 350</span>
+          </div>
 
-        </section>
-
-
-        <!-- ================= SANDWICHES HERO ================= -->
-
-        <section class="section container category-hero category-hero--balanced">
-
-            <div class="feature-panel feature-panel--text">
-
-                <p class="eyebrow">
-                    Handheld favorites
-                </p>
-
-                <h2>
-                    Comfortable, satisfying, and packed with texture.
-                </h2>
-
-                <p>
-                    Our sandwiches shine with crisp vegetables, quality deli meats,
-                    and house-made spreads. Each bite brings together fresh layers,
-                    savory fillings, and a balanced finish.
-                </p>
-
+          <div class="menu-item">
+            <img src="./images/di2.jpg" alt="Mango Smoothie" />
+            <div class="menu-item-content">
+              <strong>Mango Smoothie</strong>
+              <p>Fresh mango blended with creamy yogurt.</p>
             </div>
-
-            <img src="images/s1.png" alt="Premium sandwich hero image" />
-
-        </section>
-
-
-        <!-- ================= 10 SANDWICH ITEMS ================= -->
-
-        <section class="section container">
-
-            <div class="menu-list">
-
-
-                <!-- SANDWICH 1 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s2.png" alt="Turkey Club Sandwich" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Turkey Club
-                        </strong>
-
-                        <p>
-                            Roasted turkey, bacon, lettuce, tomato, and aioli.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,050
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 2 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s3.png" alt="Chicken Pesto Melt" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Chicken Pesto Melt
-                        </strong>
-
-                        <p>
-                            Grilled chicken, pesto, mozzarella, and tomato relish.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 950
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 3 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s4.png" alt="Veggie Panini" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Veggie Panini
-                        </strong>
-
-                        <p>
-                            Roasted peppers, spinach, mozzarella, and balsamic glaze.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 850
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 4 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s5.png" alt="Steakhouse Stack" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Steakhouse Stack
-                        </strong>
-
-                        <p>
-                            Thin-sliced steak with onion jam and horseradish cream.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,400
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 5 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s6.png" alt="Classic Club Sandwich" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Classic Club Sandwich
-                        </strong>
-
-                        <p>
-                            Triple-decker with chicken, egg, cheddar, lettuce, and mayo.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,100
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 6 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s7.png" alt="Crispy Chicken Sub" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Crispy Chicken Sub
-                        </strong>
-
-                        <p>
-                            Golden fried chicken breast, honey mustard, and crunchy slaw.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,000
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 7 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s8.png" alt="Roast Beef Panini" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Roast Beef Panini
-                        </strong>
-
-                        <p>
-                            Tender roast beef, melted swiss cheese, and caramelized onions.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,300
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 8 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s9.png" alt="Veggie Avocado Melt" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Veggie Avocado Melt
-                        </strong>
-
-                        <p>
-                            Sliced avocado, grilled tomatoes, spinach, and provolone.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 900
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 9 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s10.png" alt="Spicy Buffalo Chicken Sandwich" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Spicy Buffalo Chicken
-                        </strong>
-
-                        <p>
-                            Buffalo glazed chicken, blue cheese spread, and crisp lettuce.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 1,050
-                    </span>
-
-                </div>
-
-
-                <!-- SANDWICH 10 -->
-
-                <div class="menu-item">
-
-                    <img src="images/s11.png" alt="Tuna Melt Sandwich" />
-
-                    <div class="menu-item-content">
-
-                        <strong>
-                            Classic Tuna Melt
-                        </strong>
-
-                        <p>
-                            Savory tuna salad topped with melted cheddar on toasted sourdough.
-                        </p>
-
-                    </div>
-
-                    <span class="price">
-                        Rs 980
-                    </span>
-
-                </div>
-
-
+            <span class="price">Rs 450</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/dr3.png" alt="Chocolate Milkshake" />
+            <div class="menu-item-content">
+              <strong>Chocolate Milkshake</strong>
+              <p>Rich chocolate milkshake topped with whipped cream.</p>
             </div>
+            <span class="price">Rs 500</span>
+          </div>
 
-        </section>
+          <div class="menu-item">
+            <img src="./images/di3.jpg" alt="Strawberry Milkshake" />
+            <div class="menu-item-content">
+              <strong>Strawberry Milkshake</strong>
+              <p>Fresh strawberries blended with creamy milk and ice cream.</p>
+            </div>
+            <span class="price">Rs 480</span>
+          </div>
 
+          <div class="menu-item">
+            <img src="./images/di5.jpg" alt="Iced Coffee" />
+            <div class="menu-item-content">
+              <strong>Iced Coffee</strong>
+              <p>Smooth chilled coffee served with fresh cream and ice.</p>
+            </div>
+            <span class="price">Rs 420</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/di6.jpg" alt="Mint Lemonade" />
+            <div class="menu-item-content">
+              <strong>Mint Lemonade</strong>
+              <p>Fresh mint, lemon juice and chilled lemonade served over ice.</p>
+            </div>
+            <span class="price">Rs 300</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/di7.jpg" alt="Virgin Mojito" />
+            <div class="menu-item-content">
+              <strong>Virgin Mojito</strong>
+              <p>Fresh mint, lemon and sparkling soda with a refreshing citrus flavor.</p>
+            </div>
+            <span class="price">Rs 380</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/di8.jpg" alt="Iced Tea" />
+            <div class="menu-item-content">
+              <strong>Iced Tea</strong>
+              <p>Classic chilled iced tea with fresh lemon and ice.</p>
+            </div>
+            <span class="price">Rs 320</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/dr6.png" alt="Fresh Lime Soda" />
+            <div class="menu-item-content">
+              <strong>Fresh Lime Soda</strong>
+              <p>Fresh lime juice mixed with chilled sparkling soda.</p>
+            </div>
+            <span class="price">Rs 280</span>
+          </div>
+
+          <div class="menu-item">
+            <img src="./images/di10.jpg" alt="Fruit Punch" />
+            <div class="menu-item-content">
+              <strong>Fruit Punch</strong>
+              <p>A refreshing blend of fresh seasonal fruits and chilled juice.</p>
+            </div>
+            <span class="price">Rs 450</span>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-    <!-- ================= NEWSLETTER ================= -->
-
+    <!-- Newsletter -->
     <section class="newsletter container">
+      <h2>Join Our Newsletter</h2>
+      <p>Stay updated with our latest offers and delicious recipes.</p>
 
-        <h2>
-            Join Our Newsletter
-        </h2>
-
-        <p>
-            Stay updated with our latest offers and delicious recipes.
-        </p>
-
-        <form id="newsletterForm">
-
-            <input
-                type="email"
-                id="newsletterEmail"
-                placeholder="Enter your Email Address"
-                required
-            >
-
-            <button class="btn btn-primary" type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
+      <form id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Enter your Email Address" required>
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
+    <!-- Footer -->
     <footer>
-
-        <div class="container footer-grid">
-
-
-            <!-- Restaurant Info -->
-
-            <div class="footer-box">
-
-                <h3>
-                    Taste Haven
-                </h3>
-
-                <p>
-                    Comfort food, crafted with care and
-                    served with heart.
-                </p>
-
-            </div>
-
-
-            <!-- Quick Links -->
-
-            <div class="footer-box">
-
-                <h3>
-                    Quick Links
-                </h3>
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        <i class="fa-solid fa-house"></i>
-                        Home
-                    </a>
-
-                    <a href="about.html">
-                        <i class="fa-solid fa-circle-info"></i>
-                        About
-                    </a>
-
-                    <a href="menu.html">
-                        <i class="fa-solid fa-utensils"></i>
-                        Menu
-                    </a>
-
-                    <a href="gallery.html">
-                        <i class="fa-solid fa-image"></i>
-                        Gallery
-                    </a>
-
-                    <a href="contact.html">
-                        <i class="fa-solid fa-envelope"></i>
-                        Contact
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Opening Hours -->
-
-            <div class="footer-box">
-
-                <h3>
-                    Opening Hours
-                </h3>
-
-                <p>
-                    <i class="fa-regular fa-clock"></i>
-                    Monday - Friday
-                </p>
-
-                <p>
-                    10:00 AM - 11:00 PM
-                </p>
-
-                <br>
-
-                <p>
-                    <i class="fa-regular fa-clock"></i>
-                    Saturday - Sunday
-                </p>
-
-                <p>
-                    9:00 AM - 12:00 AM
-                </p>
-
-            </div>
-
-
-            <!-- Follow Us -->
-
-            <div class="footer-box">
-
-                <h3>
-                    Follow Us
-                </h3>
-
-                <div class="footer-links">
-
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
-                        Facebook
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                        Instagram
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-x-twitter"></i>
-                        Twitter
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-youtube"></i>
-                        YouTube
-                    </a>
-
-                </div>
-
-            </div>
-
-
+      <div class="container footer-grid">
+        <div class="footer-box">
+          <h3>Taste Haven</h3>
+          <p>Comfort food, crafted with care and served with heart.</p>
         </div>
 
-
-        <!-- Footer Bottom -->
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Taste Haven Restaurant.
-                All Rights Reserved.
-            </p>
-
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </div>
         </div>
 
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
+          <p>10:00 AM - 11:00 PM</p>
+          <br>
+          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
+          <p>9:00 AM - 12:00 AM</p>
+        </div>
+
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-x-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
+      </div>
     </footer>
 
-
-    <!-- JavaScript -->
-
-    <script src="js/script.js"></script>
-
-</body>
-
+    <!-- JS Link -->
+    <script src="./script.js"></script>
+  </body>
 </html>
