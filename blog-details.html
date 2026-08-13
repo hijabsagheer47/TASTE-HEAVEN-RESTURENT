@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Details | Taste Haven Restaurant</title>
-    <meta name="description" content="Read the latest Taste Haven Restaurant blog article for inspiration, culinary insight, and dining ideas." />
+    <meta name="description" content="Read our full article on food trends, chef tips, and dining inspiration at Taste Haven Restaurant." />
+    
+    <!-- External Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- CSS Link Updated for Root Directory -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header class="site-header container">
@@ -22,147 +26,89 @@
       </nav>
       <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
     </header>
+
     <main>
       <section class="page-header">
         <div class="container">
-          <p class="breadcrumbs"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / Details</p>
-          <h1>Why thoughtful dining creates lasting memories</h1>
-          <p>Great meals are about more than the ingredients. They are built on setting, service, and story.</p>
+          <p class="breadcrumbs"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / Post Detail</p>
+          <h1>Why Comfort Food Wins Hearts</h1>
+          <p>Published by Taste Haven Kitchen • 5 min read</p>
         </div>
       </section>
+
       <section class="section container">
-        <div class="card">
-          <h2>Behind the scenes</h2>
-          <p>At Taste Haven, every detail matters. From the warm lighting to the final garnish, we bring intention to every plate so your experience feels effortless and memorable.</p>
-        </div>
+        <article class="blog-detail-content">
+          <p>Comfort food isn't just about satisfying hunger—it's about evoking memories, warmth, and nostalgia. From slow-cooked recipes passed down through generations to modern twists on classic dishes, there is something uniquely grounding about a hearty meal.</p>
+          
+          <h2>The Science of Nostalgia</h2>
+          <p>Studies show that foods rich in familiar flavors trigger positive emotional responses, making us feel connected and relaxed. At Taste Haven, we craft our comfort dishes with fresh ingredients to balance nostalgia with high-quality culinary technique.</p>
+        </article>
       </section>
     </main>
+
     <section class="newsletter container">
-    <h2>Join Our Newsletter</h2>
+      <h2>Join Our Newsletter</h2>
+      <p>Stay updated with our latest offers and delicious recipes.</p>
 
-    <p>
-        Stay updated with our latest offers and delicious recipes.
-    </p>
-
-    <form id="newsletterForm">
-
+      <form id="newsletterForm">
         <input
-            type="email"
-            id="newsletterEmail"
-            placeholder="Enter your Email Address"
-            required
+          type="email"
+          id="newsletterEmail"
+          placeholder="Enter your Email Address"
+          required
         >
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </section>
 
-        <button class="btn btn-primary" type="submit">
-            Subscribe
-        </button>
-
-    </form>
-
-</section>
     <footer>
+      <div class="container footer-grid">
+        <!-- Restaurant Info -->
+        <div class="footer-box">
+          <h3>Taste Haven</h3>
+          <p>Comfort food, crafted with care and served with heart.</p>
+        </div>
 
-  <div class="container footer-grid">
+        <!-- Quick Links -->
+        <div class="footer-box">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+          </div>
+        </div>
 
-    <!-- Restaurant Info -->
-    <div class="footer-box">
-      <h3>Taste Haven</h3>
-      <p>
-        Comfort food, crafted with care and served with heart.
-      </p>
-    </div>
+        <!-- Opening Hours -->
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
+          <p>10:00 AM - 11:00 PM</p>
+          <br>
+          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
+          <p>9:00 AM - 12:00 AM</p>
+        </div>
 
-    <!-- Quick Links -->
-    <div class="footer-box">
-      <h3>Quick Links</h3>
-
-      <div class="footer-links">
-        <a href="index.html">
-          <i class="fa-solid fa-house"></i> Home
-        </a>
-
-        <a href="about.html">
-          <i class="fa-solid fa-circle-info"></i> About
-        </a>
-
-        <a href="menu.html">
-          <i class="fa-solid fa-utensils"></i> Menu
-        </a>
-
-        <a href="gallery.html">
-          <i class="fa-solid fa-image"></i> Gallery
-        </a>
-
-        <a href="contact.html">
-          <i class="fa-solid fa-envelope"></i> Contact
-        </a>
+        <!-- Follow Us -->
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-x-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+          </div>
+        </div>
       </div>
 
-    </div>
-
-    <!-- Opening Hours -->
-    <div class="footer-box">
-
-      <h3>Opening Hours</h3>
-
-      <p>
-        <i class="fa-regular fa-clock"></i>
-        Monday - Friday
-      </p>
-
-      <p>10:00 AM - 11:00 PM</p>
-
-      <br>
-
-      <p>
-        <i class="fa-regular fa-clock"></i>
-        Saturday - Sunday
-      </p>
-
-      <p>9:00 AM - 12:00 AM</p>
-
-    </div>
-
-    <!-- Follow Us -->
-    <div class="footer-box">
-
-      <h3>Follow Us</h3>
-
-      <div class="footer-links">
-
-        <a href="#">
-          <i class="fab fa-facebook-f"></i>
-          Facebook
-        </a>
-
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-          Instagram
-        </a>
-
-        <a href="#">
-          <i class="fab fa-x-twitter"></i>
-          Twitter
-        </a>
-
-        <a href="#">
-          <i class="fab fa-youtube"></i>
-          YouTube
-        </a>
-
+      <div class="footer-bottom">
+        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
       </div>
+    </footer>
 
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>
-      © 2026 Taste Haven Restaurant. All Rights Reserved.
-    </p>
-  </div>
-
-</footer>
-    <script src="js/script.js"></script>
+    <!-- JS Link Updated for Root Directory -->
+    <script src="./script.js"></script>
   </body>
 </html>
