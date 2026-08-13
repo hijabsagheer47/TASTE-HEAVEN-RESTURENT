@@ -14,8 +14,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Main CSS (Root Directory) -->
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -28,13 +28,13 @@
             Taste <span>Haven</span>
         </a>
 
-        <button class="nav-toggle" aria-label="Open menu">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
-        <nav class="site-nav" aria-label="Primary navigation">
+        <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
 
             <a class="nav-link" href="index.html">Home</a>
 
@@ -143,7 +143,7 @@
 
             </div>
 
-            <img src="images/pa1.png" alt="Premium pasta dish" />
+            <img src="./pas1.jpg" alt="Premium pasta dish" loading="eager" />
 
         </section>
 
@@ -159,7 +159,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas2.jpg" alt="Truffle Cream Pasta" />
+                    <img src="./pas2.jpg" alt="Truffle Cream Pasta" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -185,7 +185,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pa4.png" alt="Chicken Alfredo Pasta" />
+                    <img src="./pas4.jpg" alt="Chicken Alfredo Pasta" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -211,7 +211,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas3.jpg" alt="Tomato Basil Tagliatelle" />
+                    <img src="./pas3.jpg" alt="Tomato Basil Tagliatelle" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -237,7 +237,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas4.jpg" alt="Spicy Garlic Linguine" />
+                    <img src="./pas4.jpg" alt="Spicy Garlic Linguine" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -263,7 +263,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas5.jpg" alt="Creamy Chicken Pasta" />
+                    <img src="./pas5.jpg" alt="Creamy Chicken Pasta" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -289,7 +289,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas6.jpg" alt="Penne Arrabbiata" />
+                    <img src="./pas1.jpg" alt="Penne Arrabbiata" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -315,7 +315,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas7.jpg" alt="Creamy Pesto Farfalle" />
+                    <img src="./pas2.jpg" alt="Creamy Pesto Farfalle" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -341,7 +341,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas8.jpg" alt="Classic Bolognese Fettuccine" />
+                    <img src="./pas3.jpg" alt="Classic Bolognese Fettuccine" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -367,7 +367,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas9.jpg" alt="Seafood Marinara Spaghetti" />
+                    <img src="./pas4.jpg" alt="Seafood Marinara Spaghetti" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -393,7 +393,7 @@
 
                 <div class="menu-item">
 
-                    <img src="images/pas10.jpg" alt="Spinach & Ricotta Ravioli" />
+                    <img src="./pas5.jpg" alt="Spinach & Ricotta Ravioli" loading="lazy" />
 
                     <div class="menu-item-content">
 
@@ -436,6 +436,7 @@
 
         <form id="newsletterForm">
 
+            <label for="newsletterEmail" class="sr-only">Email Address</label>
             <input
                 type="email"
                 id="newsletterEmail"
@@ -556,22 +557,22 @@
 
                 <div class="footer-links">
 
-                    <a href="#">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-facebook-f"></i>
                         Facebook
                     </a>
 
-                    <a href="#">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>
                         Instagram
                     </a>
 
-                    <a href="#">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-x-twitter"></i>
                         Twitter
                     </a>
 
-                    <a href="#">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-youtube"></i>
                         YouTube
                     </a>
@@ -598,9 +599,9 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- JavaScript (Root Directory) -->
 
-    <script src="js/script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
