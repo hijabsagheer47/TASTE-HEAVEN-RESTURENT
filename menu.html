@@ -1,191 +1,925 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu | Taste Haven Restaurant</title>
-    <meta name="description" content="Browse Taste Haven Restaurant menu favorites, including burgers, pizzas, pastas, BBQ, desserts, and refreshing drinks." />
-    
-    <!-- External Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <!-- Fixed CSS Path (Root directory) -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header container">
-      <a class="brand" href="index.html">Taste <span>Haven</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Us</a>
-        <a class="nav-link active" href="menu.html">Menu</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="blog.html">Blog</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-      <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <main>
-      <section class="page-header">
-        <div class="container">
-          <p class="breadcrumbs"><a href="index.html">Home</a> / Menu</p>
-          <h1>Explore our menu</h1>
-          <p>Choose from hand-built burgers, charred BBQ plates, pasta classics, and home-style desserts served in a warm, polished setting.</p>
-        </div>
-      </section>
+  <title>Menu | Taste Haven Restaurant</title>
 
-      <section class="section container">
-        <div class="menu-category-nav">
-          <a class="menu-category-link active" href="menu.html">All Categories</a>
-          <a class="menu-category-link" href="burgers.html">Burgers</a>
-          <a class="menu-category-link" href="pizza.html">Pizza</a>
-          <a class="menu-category-link" href="pasta.html">Pasta</a>
-          <a class="menu-category-link" href="bbq.html">BBQ</a>
-          <a class="menu-category-link" href="sandwiches.html">Sandwiches</a>
-          <a class="menu-category-link" href="desserts.html">Desserts</a>
-          <a class="menu-category-link" href="drinks.html">Drinks</a>
-        </div>
+  <meta
+    name="description"
+    content="Explore Taste Haven Restaurant menu including starters, soups and salads, burgers, pizza, main course, grills, pasta, seafood, desserts, drinks, and kids menu."
+  />
 
-        <div class="grid grid-3">
-          <!-- Burgers -->
-          <article class="card">
-            <img src="br1.jpg" alt="Juicy gourmet burger with fresh toppings" loading="lazy" />
-            <h3>Burgers</h3>
-            <p>Smoky, juicy, and packed with bold toppings.</p>
-            <a class="btn btn-secondary btn-small" href="burgers.html">View Burgers</a>
-          </article>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-          <!-- Pizza -->
-          <article class="card">
-            <img src="pi1.jpg" alt="Wood-fired pizza with bubbling cheese" loading="lazy" />
-            <h3>Pizza</h3>
-            <p>Hand-tossed favorites with blistered crusts and rich toppings.</p>
-            <a class="btn btn-secondary btn-small" href="pizza.html">View Pizza</a>
-          </article>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-          <!-- Pasta -->
-          <article class="card">
-            <img src="pas1.jpg" alt="Freshly plated pasta with rich sauce" loading="lazy" />
-            <h3>Pasta</h3>
-            <p>Velvety sauces and comforting noodles made for slow savoring.</p>
-            <a class="btn btn-secondary btn-small" href="pasta.html">View Pasta</a>
-          </article>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
 
-          <!-- BBQ -->
-          <article class="card">
-            <img src="bq1.jpg" alt="BBQ platter with grilled meats and sides" loading="lazy" />
-            <h3>BBQ</h3>
-            <p>Slow-smoked meats with bold rubs and sticky glaze.</p>
-            <a class="btn btn-secondary btn-small" href="bbq.html">View BBQ</a>
-          </article>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <!-- Sandwiches -->
-          <article class="card">
-            <img src="san1.jpg" alt="Restaurant sandwich stacked with fresh ingredients" loading="lazy" />
-            <h3>Sandwiches</h3>
-            <p>Stacked classics made for lunch, dinner, and casual cravings.</p>
-            <a class="btn btn-secondary btn-small" href="sandwiches.html">View Sandwiches</a>
-          </article>
+<body>
 
-          <!-- Desserts -->
-          <article class="card">
-            <img src="des.jpg" alt="Dessert plating with syrup and fruit" loading="lazy" />
-            <h3>Desserts</h3>
-            <p>Rich sweets and warm bakes crafted for a memorable finish.</p>
-            <a class="btn btn-secondary btn-small" href="desserts.html">View Desserts</a>
-          </article>
+  <!-- =========================================
+       HEADER / NAVBAR
+  ========================================== -->
 
-          <!-- Drinks (Fixed Path) -->
-          <article class="card">
-            <img src="di.jpg" alt="Refreshing Drinks" loading="lazy" />
-            <h3>Drinks</h3>
-            <p>Fresh juices, smoothies, milkshakes, coffee, mojitos and refreshing beverages.</p>
-            <a class="btn btn-secondary btn-small" href="drinks.html">View Drinks</a>
-          </article>
-        </div>
-      </section>
+  <header class="site-header container">
 
-      <section class="section container feature-split">
-        <div class="feature-panel">
-          <p class="eyebrow">Chef's spotlight</p>
-          <h2>Try the house favorite and pair it with a signature refreshment.</h2>
-          <p>Every plate is layered with texture, color, and bold flavor designed to feel both comforting and elevated.</p>
-          <a class="btn btn-primary" href="contact.html">Call for Reservations</a>
-        </div>
-        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1000&q=80" alt="Cocktails and plated dishes served at a stylish restaurant" loading="lazy" />
-      </section>
-    </main>
+    <a class="brand" href="index.html">
+      Taste <span>Haven</span>
+    </a>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter container">
-      <h2>Join Our Newsletter</h2>
-      <p>Stay updated with our latest offers and delicious recipes.</p>
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <form id="newsletterForm">
-        <label for="newsletterEmail" class="sr-only">Email Address</label>
-        <input
-          type="email"
-          id="newsletterEmail"
-          placeholder="Enter your Email Address"
-          required
-        >
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-      </form>
+    <nav
+      class="site-nav"
+      id="siteNav"
+      aria-label="Primary navigation"
+    >
+
+      <a class="nav-link" href="index.html">
+        Home
+      </a>
+
+      <a class="nav-link" href="about.html">
+        About Us
+      </a>
+
+      <a class="nav-link active" href="menu.html">
+        Menu
+      </a>
+
+      <a class="nav-link" href="gallery.html">
+        Gallery
+      </a>
+
+      <a class="nav-link" href="blog.html">
+        Blog
+      </a>
+
+      <a class="nav-link" href="contact.html">
+        Contact
+      </a>
+
+    </nav>
+
+    <a
+      class="btn btn-primary btn-small"
+      href="reservations.html"
+    >
+      Book a Table
+    </a>
+
+  </header>
+
+
+  <!-- =========================================
+       MAIN CONTENT
+  ========================================== -->
+
+  <main>
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="breadcrumbs">
+          <a href="index.html">Home</a>
+          /
+          Menu
+        </p>
+
+        <h1>Explore Our Menu</h1>
+
+        <p>
+          Discover a delicious selection of freshly prepared dishes,
+          from flavorful starters and fresh salads to burgers,
+          pizza, pasta, grills, seafood, desserts, drinks,
+          and meals specially prepared for kids.
+        </p>
+
+      </div>
+
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-grid">
-        <!-- Restaurant Info -->
-        <div class="footer-box">
-          <h3>Taste Haven</h3>
-          <p>Comfort food, crafted with care and served with heart.</p>
-        </div>
 
-        <!-- Quick Links -->
-        <div class="footer-box">
-          <h3>Quick Links</h3>
-          <div class="footer-links">
-            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
-            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
-            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-          </div>
-        </div>
+    <!-- =========================================
+         MENU CATEGORY NAVIGATION
+    ========================================== -->
 
-        <!-- Opening Hours -->
-        <div class="footer-box">
-          <h3>Opening Hours</h3>
-          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
-          <p>10:00 AM - 11:00 PM</p>
-          <br>
-          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
-          <p>9:00 AM - 12:00 AM</p>
-        </div>
+    <section class="section container">
 
-        <!-- Follow Us -->
-        <div class="footer-box">
-          <h3>Follow Us</h3>
-          <div class="footer-links">
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> Twitter</a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a>
-          </div>
-        </div>
+      <div class="menu-category-nav">
+
+        <a
+          class="menu-category-link active"
+          href="menu.html"
+        >
+          All Categories
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="starters.html"
+        >
+          Starters
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="soups-salads.html"
+        >
+          Soups &amp; Salads
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="burgers.html"
+        >
+          Burgers
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="pizza.html"
+        >
+          Pizza
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="main-course.html"
+        >
+          Main Course
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="grills.html"
+        >
+          Grills
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="pasta.html"
+        >
+          Pasta
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="seafood.html"
+        >
+          Seafood
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="desserts.html"
+        >
+          Desserts
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="drinks.html"
+        >
+          Drinks
+        </a>
+
+        <a
+          class="menu-category-link"
+          href="kids-menu.html"
+        >
+          Kids Menu
+        </a>
+
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
-      </div>
-    </footer>
 
-    <!-- Fixed JS Path (Root directory) -->
-    <script src="script.js"></script>
-  </body>
+      <!-- =========================================
+           CATEGORY INTRO
+      ========================================== -->
+
+      <div class="menu-category-header">
+
+        <p class="eyebrow">
+          Taste Haven Menu
+        </p>
+
+        <h2>
+          Something Delicious for Everyone
+        </h2>
+
+        <p>
+          Explore our carefully selected menu categories
+          and discover dishes prepared with fresh ingredients,
+          bold flavors, and thoughtful presentation.
+        </p>
+
+      </div>
+
+
+      <!-- =========================================
+           MENU CATEGORY CARDS
+      ========================================== -->
+
+      <div class="grid grid-3 menu-category-grid">
+
+
+        <!-- =====================================
+             STARTERS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=900&q=80"
+            alt="Delicious restaurant starters"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Popular
+          </span>
+
+          <h3>
+            Starters
+          </h3>
+
+          <p>
+            Begin your dining experience with crispy bites,
+            flavorful appetizers, and delicious small plates.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="starters.html"
+          >
+            View Starters
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             SOUPS & SALADS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+            alt="Fresh soup and healthy salad"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Fresh
+          </span>
+
+          <h3>
+            Soups &amp; Salads
+          </h3>
+
+          <p>
+            Enjoy fresh salads and comforting soups prepared
+            with carefully selected ingredients.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="soups-salads.html"
+          >
+            View Soups &amp; Salads
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             BURGERS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="br1.jpg"
+            alt="Juicy gourmet burger with fresh toppings"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Chef Favorite
+          </span>
+
+          <h3>
+            Burgers
+          </h3>
+
+          <p>
+            Juicy handcrafted burgers layered with fresh
+            toppings, sauces, and delicious fillings.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="burgers.html"
+          >
+            View Burgers
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             PIZZA
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="pi1.jpg"
+            alt="Wood-fired pizza with melted cheese"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Signature
+          </span>
+
+          <h3>
+            Pizza
+          </h3>
+
+          <p>
+            Hand-tossed pizzas with crispy crusts,
+            rich sauces, fresh toppings, and melted cheese.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="pizza.html"
+          >
+            View Pizza
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             MAIN COURSE
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80"
+            alt="Delicious restaurant main course"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Signature
+          </span>
+
+          <h3>
+            Main Course
+          </h3>
+
+          <p>
+            Satisfying signature meals prepared with rich
+            flavors, quality ingredients, and care.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="main-course.html"
+          >
+            View Main Course
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             GRILLS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80"
+            alt="Freshly grilled meat and vegetables"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Grilled Fresh
+          </span>
+
+          <h3>
+            Grills
+          </h3>
+
+          <p>
+            Perfectly grilled meats and flavorful dishes
+            prepared with our signature seasonings.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="grills.html"
+          >
+            View Grills
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             PASTA
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="pas1.jpg"
+            alt="Freshly plated pasta with creamy sauce"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Comfort Food
+          </span>
+
+          <h3>
+            Pasta
+          </h3>
+
+          <p>
+            Creamy sauces, rich flavors, and comforting
+            pasta dishes prepared fresh for every guest.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="pasta.html"
+          >
+            View Pasta
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             SEAFOOD
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80"
+            alt="Fresh seafood restaurant dish"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Fresh Catch
+          </span>
+
+          <h3>
+            Seafood
+          </h3>
+
+          <p>
+            Fresh seafood dishes prepared with balanced
+            flavors and delicious seasonal ingredients.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="seafood.html"
+          >
+            View Seafood
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             DESSERTS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="des.jpg"
+            alt="Beautifully plated restaurant dessert"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Sweet Finish
+          </span>
+
+          <h3>
+            Desserts
+          </h3>
+
+          <p>
+            Indulge in rich desserts, warm bakes,
+            creamy treats, and memorable sweet finishes.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="desserts.html"
+          >
+            View Desserts
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             DRINKS
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="di.jpg"
+            alt="Refreshing restaurant drinks"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Refreshing
+          </span>
+
+          <h3>
+            Drinks
+          </h3>
+
+          <p>
+            Enjoy fresh juices, smoothies, milkshakes,
+            coffee, mojitos, and refreshing drinks.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="drinks.html"
+          >
+            View Drinks
+          </a>
+
+        </article>
+
+
+        <!-- =====================================
+             KIDS MENU
+        ====================================== -->
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58ff?auto=format&fit=crop&w=900&q=80"
+            alt="Delicious kids meal"
+            loading="lazy"
+          />
+
+          <span class="badge">
+            Kids Favorite
+          </span>
+
+          <h3>
+            Kids Menu
+          </h3>
+
+          <p>
+            Fun, tasty, and kid-friendly meals prepared
+            especially for our younger guests.
+          </p>
+
+          <a
+            class="btn btn-secondary btn-small"
+            href="kids-menu.html"
+          >
+            View Kids Menu
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CHEF'S SPOTLIGHT
+    ========================================== -->
+
+    <section class="section container feature-split">
+
+      <div class="feature-panel">
+
+        <p class="eyebrow">
+          Chef's Spotlight
+        </p>
+
+        <h2>
+          Discover the flavors our chefs love to create.
+        </h2>
+
+        <p>
+          Every plate at Taste Haven is prepared with
+          carefully selected ingredients, thoughtful
+          presentation, and flavors designed to make
+          every dining experience memorable.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="reservations.html"
+        >
+          Book a Table
+        </a>
+
+      </div>
+
+      <img
+        src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1000&q=80"
+        alt="Beautifully prepared dishes served at Taste Haven"
+        loading="lazy"
+      />
+
+    </section>
+
+
+    <!-- =========================================
+         ORDER CTA
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="cta-banner">
+
+        <div>
+
+          <p class="eyebrow">
+            Hungry Yet?
+          </p>
+
+          <h2>
+            Find your favorite dish today.
+          </h2>
+
+          <p>
+            Explore our menu categories and choose
+            something delicious for your next meal.
+          </p>
+
+        </div>
+
+        <a
+          class="btn btn-light"
+          href="reservations.html"
+        >
+          Reserve Your Table
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================================
+       NEWSLETTER
+  ========================================== -->
+
+  <section class="newsletter container">
+
+    <h2>
+      Join Our Newsletter
+    </h2>
+
+    <p>
+      Stay updated with our latest offers,
+      special dishes, and delicious recipes.
+    </p>
+
+    <form id="newsletterForm">
+
+      <label
+        for="newsletterEmail"
+        class="sr-only"
+      >
+        Email Address
+      </label>
+
+      <input
+        type="email"
+        id="newsletterEmail"
+        name="email"
+        placeholder="Enter your Email Address"
+        required
+      />
+
+      <button
+        class="btn btn-primary"
+        type="submit"
+      >
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
+    <div class="container footer-grid">
+
+
+      <!-- RESTAURANT INFO -->
+
+      <div class="footer-box">
+
+        <h3>
+          Taste Haven
+        </h3>
+
+        <p>
+          Comfort food, crafted with care
+          and served with heart.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+
+      <div class="footer-box">
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+
+          <a href="about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+
+          <a href="menu.html">
+            <i class="fa-solid fa-utensils"></i>
+            Menu
+          </a>
+
+          <a href="gallery.html">
+            <i class="fa-solid fa-image"></i>
+            Gallery
+          </a>
+
+          <a href="contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- OPENING HOURS -->
+
+      <div class="footer-box">
+
+        <h3>
+          Opening Hours
+        </h3>
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Monday - Friday
+        </p>
+
+        <p>
+          10:00 AM - 11:00 PM
+        </p>
+
+        <br />
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Saturday - Sunday
+        </p>
+
+        <p>
+          9:00 AM - 12:00 AM
+        </p>
+
+      </div>
+
+
+      <!-- FOLLOW US -->
+
+      <div class="footer-box">
+
+        <h3>
+          Follow Us
+        </h3>
+
+        <div class="footer-links">
+
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+
+          <a href="#">
+            <i class="fab fa-x-twitter"></i>
+            Twitter
+          </a>
+
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+            YouTube
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Taste Haven Restaurant.
+        All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script src="script.js"></script>
+
+</body>
 </html>

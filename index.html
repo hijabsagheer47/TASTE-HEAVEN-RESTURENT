@@ -1,210 +1,1836 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Taste Haven Restaurant | Authentic Flavors & Cozy Dining</title>
-    <meta name="description" content="Taste Haven Restaurant serves handcrafted burgers, wood-fired pizzas, fresh pasta, and warm hospitality in a cozy dining experience." />
-    <meta name="keywords" content="restaurant, burger, pizza, pasta, dining, Taste Haven" />
-    <meta name="author" content="Taste Haven Restaurant" />
-    
-    <!-- External Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <!-- CSS Path Updated for Root Directory -->
-    <link rel="stylesheet" href="./style.css" />
-    
-    <meta property="og:title" content="Taste Haven Restaurant" />
-    <meta property="og:description" content="A modern restaurant website featuring fresh food, chef stories, and unforgettable dining." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./images/banners/hero-home.svg" />
-    <meta property="og:url" content="https://tastehaven.com/" />
-    <link rel="canonical" href="https://tastehaven.com/" />
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "Taste Haven Restaurant",
-      "image": "https://example.com/images/banners/hero-home.svg",
-      "telephone": "+1-555-0148",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "88 Culinary Avenue",
-        "addressLocality": "Downtown",
-        "addressRegion": "CA",
-        "postalCode": "90001",
-        "addressCountry": "US"
-      },
-      "servesCuisine": ["American", "Italian", "BBQ"],
-      "priceRange": "$$$",
-      "url": "https://example.com/"
-    }
-    </script>
-  </head>
-  <body>
-    <header class="site-header container">
-      <a class="brand" href="index.html">Taste <span>Haven</span></a>
-      <button class="nav-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Us</a>
-        <a class="nav-link" href="menu.html">Menu</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="blog.html">Blog</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-      <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
-    </header>
 
-    <main>
-      <section class="hero container">
-        <div>
-          <p class="eyebrow">Award-winning comfort food!</p>
-          <h1>Where Great Food Meets Unforgettable Moments.</h1>
-          <p>From mouthwatering grills to artisan pizzas and irresistible desserts, Taste Haven creates flavorful experiences made to be remembered.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="menu.html">Explore Menu</a>
-            <a class="btn btn-light" href="about.html">Our Story</a>
-          </div>
-          <div class="trust-strip">
-            <span class="trust-pill">Fresh ingredients daily</span>
-            <span class="trust-pill">Private dining available</span>
-            <span class="trust-pill">Live weekend specials</span>
-          </div>
-          <div class="stats">
-            <div class="stat"><strong>50+</strong><span>Signature dishes</span></div>
-            <div class="stat"><strong>4.9★</strong><span>Guest rating</span></div>
-            <div class="stat"><strong>24/7</strong><span>Reservations</span></div>
-            <div class="stat"><strong>100%</strong><span>Fresh ingredients</span></div>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=80" alt="Warm restaurant dining room with elegant plates and cozy lighting" />
-          <div class="floating-card">
-            <h3>Tonight's favorite</h3>
-            <p>Smoked brisket burger • house fries • citrus spritz</p>
-          </div>
-        </div>
-      </section>
+<head>
 
-      <section class="section container">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow">Why diners love us</p>
-            <h2>Fresh flavors, thoughtful preparation, unforgettable taste.</h2>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Taste Haven Restaurant | Authentic Flavors & Cozy Dining
+  </title>
+
+  <meta
+    name="description"
+    content="Taste Haven Restaurant serves handcrafted burgers, wood-fired pizzas, fresh pasta, and warm hospitality in a cozy dining experience."
+  />
+
+  <meta
+    name="keywords"
+    content="restaurant, burger, pizza, pasta, dining, Taste Haven, reviews, food"
+  />
+
+  <meta
+    name="author"
+    content="Taste Haven Restaurant"
+  />
+
+
+  <!-- =========================================
+       GOOGLE FONTS
+  ========================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+
+
+  <!-- =========================================
+       FONT AWESOME
+  ========================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+
+
+  <!-- =========================================
+       CSS
+  ========================================== -->
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  />
+
+
+  <!-- =========================================
+       OPEN GRAPH
+  ========================================== -->
+
+  <meta
+    property="og:title"
+    content="Taste Haven Restaurant"
+  />
+
+  <meta
+    property="og:description"
+    content="A modern restaurant website featuring fresh food, chef stories, customer reviews, and unforgettable dining."
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:image"
+    content="./images/banners/hero-home.svg"
+  />
+
+  <meta
+    property="og:url"
+    content="https://tastehaven.com/"
+  />
+
+
+  <!-- =========================================
+       CANONICAL
+  ========================================== -->
+
+  <link
+    rel="canonical"
+    href="https://tastehaven.com/"
+  />
+
+
+  <!-- =========================================
+       RESTAURANT SCHEMA
+  ========================================== -->
+
+  <script type="application/ld+json">
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+
+    "name": "Taste Haven Restaurant",
+
+    "image": "https://example.com/images/banners/hero-home.svg",
+
+    "telephone": "+1-555-0148",
+
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "88 Culinary Avenue",
+      "addressLocality": "Downtown",
+      "addressRegion": "CA",
+      "postalCode": "90001",
+      "addressCountry": "US"
+    },
+
+    "servesCuisine": [
+      "American",
+      "Italian",
+      "BBQ"
+    ],
+
+    "priceRange": "$$$",
+
+    "url": "https://example.com/"
+  }
+
+  </script>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
+  <header class="site-header container">
+
+
+    <a
+      class="brand"
+      href="index.html"
+    >
+      Taste <span>Haven</span>
+    </a>
+
+
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      type="button"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+
+    <nav
+      class="site-nav"
+      id="siteNav"
+      aria-label="Primary navigation"
+    >
+
+      <a
+        class="nav-link active"
+        href="index.html"
+      >
+        Home
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="about.html"
+      >
+        About Us
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="menu.html"
+      >
+        Menu
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="gallery.html"
+      >
+        Gallery
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="reviews.html"
+      >
+        Reviews
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="blog.html"
+      >
+        Blog
+      </a>
+
+
+      <a
+        class="nav-link"
+        href="contact.html"
+      >
+        Contact
+      </a>
+
+    </nav>
+
+
+    <a
+      class="btn btn-primary btn-small"
+      href="order-online.html"
+    >
+      Order Online
+    </a>
+
+
+    <a
+      class="btn btn-primary btn-small"
+      href="reservations.html"
+    >
+      Book a Table
+    </a>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+
+    <section class="hero container">
+
+
+      <div>
+
+
+        <p class="eyebrow">
+          Award-winning comfort food!
+        </p>
+
+
+        <h1>
+          Where Great Food Meets Unforgettable Moments.
+        </h1>
+
+
+        <p>
+          From mouthwatering grills to artisan pizzas and
+          irresistible desserts, Taste Haven creates flavorful
+          experiences made to be remembered.
+        </p>
+
+
+        <div class="hero-actions">
+
+
+          <a
+            class="btn btn-primary"
+            href="menu.html"
+          >
+            Explore Menu
+          </a>
+
+
+          <a
+            class="btn btn-light"
+            href="about.html"
+          >
+            Our Story
+          </a>
+
+
+        </div>
+
+
+        <div class="trust-strip">
+
+
+          <span class="trust-pill">
+            Fresh ingredients daily
+          </span>
+
+
+          <span class="trust-pill">
+            Private dining available
+          </span>
+
+
+          <span class="trust-pill">
+            Live weekend specials
+          </span>
+
+
+        </div>
+
+
+        <div class="stats">
+
+
+          <div class="stat">
+
+            <strong>
+              50+
+            </strong>
+
+            <span>
+              Signature dishes
+            </span>
+
           </div>
-        </div>
-        <div class="grid grid-3">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Chef preparing a fresh seasonal dish" />
-            <span class="badge">Chef inspired</span>
-            <h3>Seasonal menus</h3>
-            <p>Our chefs rotate signature dishes each month using local produce and premium ingredients.</p>
-          </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Cozy dining room with warm lighting and elegant decor" />
-            <span class="badge">Atmosphere</span>
-            <h3>Cozy interiors</h3>
-            <p>From intimate dinners to lively weekend brunches, the ambiance stays warm and inviting.</p>
-          </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80" alt="Table set with signature dishes and sparkling drinks" />
-            <span class="badge">Community</span>
-            <h3>Local favorites</h3>
-            <p>We partner with nearby growers and suppliers to support the neighborhoods we serve.</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="section container feature-split">
-        <div class="feature-panel">
-          <p class="eyebrow">Signature experience</p>
-          <h2>Where sophisticated dining meets authentic flavor and welcoming hospitality.</h2>
-          <p>From memorable celebrations to everyday dining, Taste Haven brings together warm hospitality, attentive service, and unforgettable flavors.</p>
-          <a class="btn btn-primary" href="reservations.html">Reserve Your Table</a>
-        </div>
-        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80" alt="Elegant plated meal served on a restaurant table" />
-      </section>
 
-      <section class="section container">
-        <div class="cta-banner">
-          <div>
-            <p class="eyebrow">Reserve your table</p>
-            <h2>Experience an Evening of Exceptional Flavor.</h2>
-            <p>Reserve your table and experience the exceptional flavors, warm hospitality, and inviting atmosphere of Taste Haven.</p>
+          <div class="stat">
+
+            <strong>
+              4.9★
+            </strong>
+
+            <span>
+              Guest rating
+            </span>
+
           </div>
-          <a class="btn btn-light" href="reservations.html">Reserve Now</a>
+
+
+          <div class="stat">
+
+            <strong>
+              24/7
+            </strong>
+
+            <span>
+              Reservations
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              100%
+            </strong>
+
+            <span>
+              Fresh ingredients
+            </span>
+
+          </div>
+
+
         </div>
-      </section>
-    </main>
 
-    <section class="newsletter container">
-      <h2>Join Our Newsletter</h2>
-      <p>Stay updated with our latest offers and delicious recipes.</p>
 
-      <form id="newsletterForm">
-        <input
-          type="email"
-          id="newsletterEmail"
-          placeholder="Enter your Email Address"
-          required
-        >
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-      </form>
+      </div>
+
+
+      <div class="hero-media">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=80"
+          alt="Warm restaurant dining room with elegant plates and cozy lighting"
+        />
+
+
+        <div class="floating-card">
+
+
+          <h3>
+            Tonight's favorite
+          </h3>
+
+
+          <p>
+            Smoked brisket burger • house fries • citrus spritz
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+
     </section>
 
-    <button id="scrollTopBtn">↑</button>
 
-    <footer>
-      <div class="container footer-grid">
-        <div class="footer-box">
-          <h3>Taste Haven</h3>
-          <p>Comfort food, crafted with care and served with heart.</p>
+
+    <!-- =========================================
+         FEATURED DISHES
+    ========================================== -->
+
+    <section class="section container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Featured dishes
+          </p>
+
+
+          <h2>
+            Our Most Loved Signature Dishes
+          </h2>
+
+
+          <p>
+            Discover the flavors our guests keep coming back for.
+          </p>
+
+
         </div>
 
-        <div class="footer-box">
-          <h3>Quick Links</h3>
-          <div class="footer-links">
-            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
-            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
-            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-          </div>
-        </div>
 
-        <div class="footer-box">
-          <h3>Opening Hours</h3>
-          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
-          <p>10:00 AM - 11:00 PM</p>
-          <br>
-          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
-          <p>9:00 AM - 12:00 AM</p>
-        </div>
+        <a
+          class="btn btn-light"
+          href="menu.html"
+        >
+          View Full Menu
+        </a>
 
-        <div class="footer-box">
-          <h3>Follow Us</h3>
-          <div class="footer-links">
-            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#"><i class="fab fa-x-twitter"></i> Twitter</a>
-            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
-          </div>
-        </div>
+
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
-      </div>
-    </footer>
 
-    <!-- JS Path Updated for Root Directory -->
-    <script src="./script.js"></script>
-  </body>
+      <div class="grid grid-3 featured-dishes">
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80"
+            alt="Signature beef burger"
+          />
+
+
+          <span class="badge">
+            Popular
+          </span>
+
+
+          <h3>
+            Haven Signature Burger
+          </h3>
+
+
+          <p>
+            Juicy grilled beef, melted cheese, fresh vegetables,
+            and our special house sauce.
+          </p>
+
+
+          <div class="dish-footer">
+
+
+            <strong>
+              $14.99
+            </strong>
+
+
+            <a href="menu.html">
+              View Dish →
+            </a>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+            alt="Wood fired pizza"
+          />
+
+
+          <span class="badge">
+            Chef's Choice
+          </span>
+
+
+          <h3>
+            Wood-Fired Pizza
+          </h3>
+
+
+          <p>
+            Fresh mozzarella, rich tomato sauce,
+            herbs, and perfectly baked artisan crust.
+          </p>
+
+
+          <div class="dish-footer">
+
+
+            <strong>
+              $16.99
+            </strong>
+
+
+            <a href="menu.html">
+              View Dish →
+            </a>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80"
+            alt="Creamy Italian pasta"
+          />
+
+
+          <span class="badge">
+            Guest Favorite
+          </span>
+
+
+          <h3>
+            Creamy Italian Pasta
+          </h3>
+
+
+          <p>
+            Fresh pasta tossed in a rich creamy sauce
+            with herbs and premium ingredients.
+          </p>
+
+
+          <div class="dish-footer">
+
+
+            <strong>
+              $13.99
+            </strong>
+
+
+            <a href="menu.html">
+              View Dish →
+            </a>
+
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         TODAY'S SPECIALS
+    ========================================== -->
+
+    <section class="section specials-section">
+
+
+      <div class="container">
+
+
+        <div class="section-header centered-header">
+
+
+          <div>
+
+
+            <p class="eyebrow">
+              Today's specials
+            </p>
+
+
+            <h2>
+              Freshly Prepared for Today
+            </h2>
+
+
+            <p>
+              Limited-time dishes prepared with fresh ingredients
+              and chef-inspired flavors.
+            </p>
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="grid grid-3">
+
+
+          <article class="special-card">
+
+
+            <div class="special-icon">
+              <i class="fa-solid fa-burger"></i>
+            </div>
+
+
+            <h3>
+              Smoky BBQ Burger
+            </h3>
+
+
+            <p>
+              Grilled beef, smoky BBQ sauce,
+              crispy onions, and house fries.
+            </p>
+
+
+            <strong>
+              $15.99
+            </strong>
+
+
+          </article>
+
+
+
+          <article class="special-card">
+
+
+            <div class="special-icon">
+              <i class="fa-solid fa-pizza-slice"></i>
+            </div>
+
+
+            <h3>
+              Truffle Mushroom Pizza
+            </h3>
+
+
+            <p>
+              Wild mushrooms, mozzarella,
+              truffle oil, and fresh herbs.
+            </p>
+
+
+            <strong>
+              $17.99
+            </strong>
+
+
+          </article>
+
+
+
+          <article class="special-card">
+
+
+            <div class="special-icon">
+              <i class="fa-solid fa-ice-cream"></i>
+            </div>
+
+
+            <h3>
+              Chocolate Lava Cake
+            </h3>
+
+
+            <p>
+              Warm chocolate cake served
+              with vanilla ice cream.
+            </p>
+
+
+            <strong>
+              $8.99
+            </strong>
+
+
+          </article>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         WHY CHOOSE US
+    ========================================== -->
+
+    <section class="section container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Why diners love us
+          </p>
+
+
+          <h2>
+            Fresh flavors, thoughtful preparation,
+            unforgettable taste.
+          </h2>
+
+
+        </div>
+
+
+      </div>
+
+
+      <div class="grid grid-3">
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80"
+            alt="Chef preparing a fresh seasonal dish"
+          />
+
+
+          <span class="badge">
+            Chef inspired
+          </span>
+
+
+          <h3>
+            Seasonal menus
+          </h3>
+
+
+          <p>
+            Our chefs rotate signature dishes each month
+            using local produce and premium ingredients.
+          </p>
+
+
+        </article>
+
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+            alt="Cozy dining room"
+          />
+
+
+          <span class="badge">
+            Atmosphere
+          </span>
+
+
+          <h3>
+            Cozy interiors
+          </h3>
+
+
+          <p>
+            From intimate dinners to lively weekend brunches,
+            the ambiance stays warm and inviting.
+          </p>
+
+
+        </article>
+
+
+
+        <article class="card">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
+            alt="Table set with signature dishes"
+          />
+
+
+          <span class="badge">
+            Community
+          </span>
+
+
+          <h3>
+            Local favorites
+          </h3>
+
+
+          <p>
+            We partner with nearby growers and suppliers
+            to support the neighborhoods we serve.
+          </p>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         CHEF INTRODUCTION
+    ========================================== -->
+
+    <section class="section container chef-section">
+
+
+      <div class="chef-image">
+
+
+        <img
+          src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80"
+          alt="Taste Haven head chef preparing food"
+        />
+
+
+      </div>
+
+
+      <div class="chef-content">
+
+
+        <p class="eyebrow">
+          Meet our chef
+        </p>
+
+
+        <h2>
+          Passion, Creativity & Flavor in Every Dish.
+        </h2>
+
+
+        <p>
+          Our head chef brings years of culinary experience
+          and a passion for creating unforgettable dining experiences.
+        </p>
+
+
+        <p>
+          Every dish at Taste Haven is prepared with carefully
+          selected ingredients, creativity, and attention to detail.
+        </p>
+
+
+        <div class="chef-info">
+
+
+          <h3>
+            Chef Daniel Morgan
+          </h3>
+
+
+          <span>
+            Head Chef & Culinary Director
+          </span>
+
+
+        </div>
+
+
+        <a
+          class="btn btn-primary"
+          href="chef.html"
+        >
+          Meet Our Chef
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         FEATURE SPLIT
+    ========================================== -->
+
+    <section class="section container feature-split">
+
+
+      <div class="feature-panel">
+
+
+        <p class="eyebrow">
+          Signature experience
+        </p>
+
+
+        <h2>
+          Where sophisticated dining meets authentic flavor
+          and welcoming hospitality.
+        </h2>
+
+
+        <p>
+          From memorable celebrations to everyday dining,
+          Taste Haven brings together warm hospitality,
+          attentive service, and unforgettable flavors.
+        </p>
+
+
+        <a
+          class="btn btn-primary"
+          href="reservations.html"
+        >
+          Reserve Your Table
+        </a>
+
+
+      </div>
+
+
+      <img
+        src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1000&q=80"
+        alt="Elegant plated meal served on a restaurant table"
+      />
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         RESTAURANT GALLERY
+    ========================================== -->
+
+    <section class="section gallery-section">
+
+
+      <div class="container">
+
+
+        <div class="section-header centered-header">
+
+
+          <div>
+
+
+            <p class="eyebrow">
+              Restaurant gallery
+            </p>
+
+
+            <h2>
+              A Taste of the Taste Haven Experience
+            </h2>
+
+
+            <p>
+              Explore our delicious dishes, cozy interiors,
+              and memorable dining moments.
+            </p>
+
+
+          </div>
+
+
+        </div>
+
+
+        <div class="restaurant-gallery">
+
+
+          <img
+            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80"
+            alt="Restaurant food table"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Restaurant interior"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80"
+            alt="Fresh restaurant dish"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80"
+            alt="Cozy restaurant dining"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+            alt="Fresh pizza"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80"
+            alt="Restaurant plated meal"
+          />
+
+
+        </div>
+
+
+        <div class="gallery-button">
+
+
+          <a
+            class="btn btn-primary"
+            href="gallery.html"
+          >
+            View Full Gallery
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         CUSTOMER REVIEWS
+         HOMEPAGE: 5 REVIEWS
+    ========================================== -->
+
+    <section class="section container">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Customer reviews
+          </p>
+
+
+          <h2>
+            What Our Guests Are Saying
+          </h2>
+
+
+          <p>
+            Real experiences from people who have enjoyed
+            Taste Haven.
+          </p>
+
+
+        </div>
+
+
+        <a
+          class="btn btn-primary"
+          href="reviews.html"
+        >
+          View All Reviews
+        </a>
+
+
+      </div>
+
+
+
+      <!-- Overall Rating -->
+
+      <div class="reviews-summary">
+
+
+        <div class="review-rating">
+
+
+          <strong>
+            4.9
+          </strong>
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <span>
+            Based on 250+ customer reviews
+          </span>
+
+
+        </div>
+
+
+        <div class="google-review-badge">
+
+
+          <i class="fab fa-google"></i>
+
+
+          <div>
+
+
+            <strong>
+              Google Reviews
+            </strong>
+
+
+            <span>
+              Excellent Customer Rating
+            </span>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- Review Cards -->
+
+      <div class="grid grid-3 reviews-grid">
+
+
+
+        <!-- REVIEW 1 -->
+
+        <article class="review-card">
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <p>
+            "The food was absolutely amazing and the
+            atmosphere was warm and welcoming. Definitely
+            one of my favorite restaurants!"
+          </p>
+
+
+          <div class="reviewer">
+
+
+            <strong>
+              Sarah Johnson
+            </strong>
+
+
+            <span>
+              Google Review
+            </span>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- REVIEW 2 -->
+
+        <article class="review-card">
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <p>
+            "The pizza was fresh, delicious, and perfectly
+            cooked. The staff was also incredibly friendly."
+          </p>
+
+
+          <div class="reviewer">
+
+
+            <strong>
+              Michael Brown
+            </strong>
+
+
+            <span>
+              Google Review
+            </span>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- REVIEW 3 -->
+
+        <article class="review-card">
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <p>
+            "A perfect place for dinner with family and
+            friends. Great service, beautiful atmosphere,
+            and unforgettable flavors."
+          </p>
+
+
+          <div class="reviewer">
+
+
+            <strong>
+              Emily Davis
+            </strong>
+
+
+            <span>
+              Google Review
+            </span>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- REVIEW 4 -->
+
+        <article class="review-card">
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <p>
+            "The service was excellent and every dish
+            tasted fresh. We especially loved the chef's
+            special. Highly recommended!"
+          </p>
+
+
+          <div class="reviewer">
+
+
+            <strong>
+              James Wilson
+            </strong>
+
+
+            <span>
+              Featured Review
+            </span>
+
+
+          </div>
+
+
+        </article>
+
+
+
+        <!-- REVIEW 5 -->
+
+        <article class="review-card">
+
+
+          <div class="stars">
+            ★★★★★
+          </div>
+
+
+          <p>
+            "We celebrated a special occasion at Taste
+            Haven and everything was perfect. The food,
+            staff, and ambiance were outstanding."
+          </p>
+
+
+          <div class="reviewer">
+
+
+            <strong>
+              Olivia Martin
+            </strong>
+
+
+            <span>
+              Happy Customer
+            </span>
+
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+      <!-- View All Button -->
+
+      <div class="review-button">
+
+
+        <a
+          href="reviews.html"
+          class="btn btn-primary"
+        >
+          View All Reviews
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         OPENING HOURS
+    ========================================== -->
+
+    <section class="section opening-hours-section">
+
+
+      <div class="container opening-hours-content">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Opening hours
+          </p>
+
+
+          <h2>
+            Come Dine With Us
+          </h2>
+
+
+          <p>
+            Join us for delicious food, warm hospitality,
+            and unforgettable moments.
+          </p>
+
+
+        </div>
+
+
+        <div class="hours-card">
+
+
+          <div class="hours-row">
+
+
+            <span>
+              Monday - Friday
+            </span>
+
+
+            <strong>
+              10:00 AM - 11:00 PM
+            </strong>
+
+
+          </div>
+
+
+          <div class="hours-row">
+
+
+            <span>
+              Saturday
+            </span>
+
+
+            <strong>
+              9:00 AM - 12:00 AM
+            </strong>
+
+
+          </div>
+
+
+          <div class="hours-row">
+
+
+            <span>
+              Sunday
+            </span>
+
+
+            <strong>
+              9:00 AM - 12:00 AM
+            </strong>
+
+
+          </div>
+
+
+          <a
+            class="btn btn-primary"
+            href="reservations.html"
+          >
+            Book Your Table
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         RESERVATION CTA
+    ========================================== -->
+
+    <section class="section container">
+
+
+      <div class="cta-banner">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Reserve your table
+          </p>
+
+
+          <h2>
+            Experience an Evening of Exceptional Flavor.
+          </h2>
+
+
+          <p>
+            Reserve your table and experience the exceptional
+            flavors, warm hospitality, and inviting atmosphere
+            of Taste Haven.
+          </p>
+
+
+        </div>
+
+
+        <a
+          class="btn btn-light"
+          href="reservations.html"
+        >
+          Reserve Now
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       NEWSLETTER
+  ========================================== -->
+
+  <section class="newsletter container">
+
+
+    <h2>
+      Join Our Newsletter
+    </h2>
+
+
+    <p>
+      Stay updated with our latest offers and delicious recipes.
+    </p>
+
+
+    <form
+      id="newsletterForm"
+    >
+
+
+      <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your Email Address"
+        required
+      />
+
+
+      <button
+        class="btn btn-primary"
+        type="submit"
+      >
+        Subscribe
+      </button>
+
+
+    </form>
+
+
+  </section>
+
+
+
+  <!-- =========================================
+       SCROLL TO TOP
+  ========================================== -->
+
+  <button
+    id="scrollTopBtn"
+    aria-label="Scroll to top"
+  >
+    ↑
+  </button>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
+
+    <div class="container footer-grid">
+
+
+      <!-- Restaurant Info -->
+
+      <div class="footer-box">
+
+
+        <h3>
+          Taste Haven
+        </h3>
+
+
+        <p>
+          Comfort food, crafted with care and served
+          with heart.
+        </p>
+
+
+      </div>
+
+
+
+      <!-- Quick Links -->
+
+      <div class="footer-box">
+
+
+        <h3>
+          Quick Links
+        </h3>
+
+
+        <div class="footer-links">
+
+
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+
+
+          <a href="about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+
+
+          <a href="menu.html">
+            <i class="fa-solid fa-utensils"></i>
+            Menu
+          </a>
+
+
+          <a href="order-online.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Order Online
+          </a>
+
+
+          <a href="gallery.html">
+            <i class="fa-solid fa-image"></i>
+            Gallery
+          </a>
+
+
+          <a href="reviews.html">
+            <i class="fa-solid fa-star"></i>
+            Reviews
+          </a>
+
+
+          <a href="contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contact
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- Opening Hours -->
+
+      <div class="footer-box">
+
+
+        <h3>
+          Opening Hours
+        </h3>
+
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Monday - Friday
+        </p>
+
+
+        <p>
+          10:00 AM - 11:00 PM
+        </p>
+
+
+        <br />
+
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Saturday - Sunday
+        </p>
+
+
+        <p>
+          9:00 AM - 12:00 AM
+        </p>
+
+
+      </div>
+
+
+
+      <!-- Follow Us -->
+
+      <div class="footer-box">
+
+
+        <h3>
+          Follow Us
+        </h3>
+
+
+        <div class="footer-links">
+
+
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+          </a>
+
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+
+
+          <a href="#">
+            <i class="fab fa-x-twitter"></i>
+            Twitter
+          </a>
+
+
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+            YouTube
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Footer Bottom -->
+
+    <div class="footer-bottom">
+
+
+      <p>
+        © 2026 Taste Haven Restaurant.
+        All Rights Reserved.
+      </p>
+
+
+    </div>
+
+
+  </footer>
+
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script src="./script.js"></script>
+
+
+</body>
+
 </html>

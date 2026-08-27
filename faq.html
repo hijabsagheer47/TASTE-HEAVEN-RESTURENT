@@ -1,148 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frequently Asked Questions | Taste Haven Restaurant</title>
-    <meta name="description" content="Find answers to frequently asked questions about Taste Haven Restaurant regarding reservations, menu options, delivery, and dining." />
-    
-    <!-- External Fonts & Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
-    <!-- CSS Link Updated for Root Directory -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="site-header container">
-      <a class="brand" href="index.html">Taste <span>Haven</span></a>
-      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Us</a>
-        <a class="nav-link" href="menu.html">Menu</a>
-        <a class="nav-link" href="gallery.html">Gallery</a>
-        <a class="nav-link" href="blog.html">Blog</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-      </nav>
-      <a class="btn btn-primary btn-small" href="reservations.html">Book a Table</a>
-    </header>
 
-    <main>
-      <!-- Page Header -->
-      <section class="page-header">
-        <div class="container">
-          <p class="breadcrumbs">
-            <a href="index.html">Home</a> / 
-            FAQ
-          </p>
-          <h1>Frequently Asked Questions</h1>
-          <p>Got questions? We have answers to help make your dining experience seamless.</p>
-        </div>
-      </section>
+<head>
 
-      <!-- FAQ Content Section -->
-      <section class="section container">
-        <div class="faq-grid">
-          
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> What are your opening hours?</h3>
-            <p>We are open Monday to Friday from 10:00 AM to 11:00 PM, and Saturday to Sunday from 9:00 AM to 12:00 AM.</p>
-          </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> Do I need to make a reservation in advance?</h3>
-            <p>While walk-ins are always welcome, we highly recommend booking a table in advance, especially during weekends and peak dinner hours.</p>
-          </div>
+  <title>Frequently Asked Questions | Taste Haven Restaurant</title>
 
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> Do you offer vegetarian and vegan options?</h3>
-            <p>Yes, our menu features a wide variety of vegetarian and vegan items clearly marked across all categories including pizzas, pasta, and salads.</p>
-          </div>
+  <meta
+    name="description"
+    content="Find answers to frequently asked questions about reservations, takeaway, delivery, vegetarian and halal options, private dining, catering, opening hours, parking, and more at Taste Haven Restaurant."
+  />
 
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> Is home delivery or takeaway available?</h3>
-            <p>Yes, you can order takeaway directly through our contact line or place delivery orders via our food delivery partners.</p>
-          </div>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
 
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> Can you accommodate large parties or private events?</h3>
-            <p>Absolutely! We offer group dining options and private event bookings. Please reach out through our contact page to plan your event.</p>
-          </div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css" />
 
-          <div class="faq-item">
-            <h3><i class="fa-solid fa-circle-question"></i> What payment methods do you accept?</h3>
-            <p>We accept Cash, major Credit/Debit Cards, and popular mobile wallet payment methods.</p>
-          </div>
+</head>
 
-        </div>
-      </section>
-    </main>
 
-    <!-- Newsletter -->
-    <section class="newsletter container">
-      <h2>Join Our Newsletter</h2>
-      <p>Stay updated with our latest offers and delicious recipes.</p>
+<body>
 
-      <form id="newsletterForm">
-        <input
-          type="email"
-          id="newsletterEmail"
-          placeholder="Enter your Email Address"
-          required
-        >
-        <button class="btn btn-primary" type="submit">Subscribe</button>
-      </form>
+
+  <!-- =========================================
+       HEADER
+  ========================================== -->
+
+  <header class="site-header container">
+
+    <a class="brand" href="index.html">
+      Taste <span>Haven</span>
+    </a>
+
+
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <nav
+      class="site-nav"
+      id="siteNav"
+      aria-label="Primary navigation"
+    >
+
+      <a class="nav-link" href="index.html">
+        Home
+      </a>
+
+      <a class="nav-link" href="about.html">
+        About
+      </a>
+
+      <a class="nav-link" href="menu.html">
+        Menu
+      </a>
+
+      <a class="nav-link" href="specials.html">
+        Specials
+      </a>
+
+      <a class="nav-link" href="gallery.html">
+        Gallery
+      </a>
+
+      <a class="nav-link" href="events.html">
+        Events
+      </a>
+
+      <a class="nav-link" href="contact.html">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <a
+      class="btn btn-primary btn-small"
+      href="reservations.html"
+    >
+      Book a Table
+    </a>
+
+  </header>
+
+
+
+  <!-- =========================================
+       MAIN
+  ========================================== -->
+
+  <main>
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <section class="page-header">
+
+      <div class="container">
+
+        <p class="breadcrumbs">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          /
+
+          FAQ
+
+        </p>
+
+
+        <h1>
+          Frequently Asked Questions
+        </h1>
+
+
+        <p>
+          Got questions? Find quick answers about reservations,
+          dining, delivery, catering, and more.
+        </p>
+
+      </div>
+
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container footer-grid">
-        <!-- Restaurant Info -->
-        <div class="footer-box">
-          <h3>Taste Haven</h3>
-          <p>Comfort food, crafted with care and served with heart.</p>
+
+
+    <!-- =========================================
+         FAQ SECTION
+    ========================================== -->
+
+    <section class="section container">
+
+
+      <div class="section-header centered-header">
+
+        <div>
+
+          <p class="eyebrow">
+            FAQ
+          </p>
+
+          <h2>
+            Frequently Asked Questions
+          </h2>
+
+          <p>
+            Everything you need to know before visiting Taste Haven.
+          </p>
+
         </div>
 
-        <!-- Quick Links -->
-        <div class="footer-box">
-          <h3>Quick Links</h3>
-          <div class="footer-links">
-            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-            <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
-            <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
-            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-          </div>
-        </div>
-
-        <!-- Opening Hours -->
-        <div class="footer-box">
-          <h3>Opening Hours</h3>
-          <p><i class="fa-regular fa-clock"></i> Monday - Friday</p>
-          <p>10:00 AM - 11:00 PM</p>
-          <br>
-          <p><i class="fa-regular fa-clock"></i> Saturday - Sunday</p>
-          <p>9:00 AM - 12:00 AM</p>
-        </div>
-
-        <!-- Follow Us -->
-        <div class="footer-box">
-          <h3>Follow Us</h3>
-          <div class="footer-links">
-            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#"><i class="fab fa-x-twitter"></i> Twitter</a>
-            <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
-          </div>
-        </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Taste Haven Restaurant. All Rights Reserved.</p>
-      </div>
-    </footer>
 
-    <!-- JS Link Updated for Root Directory -->
-    <script src="./script.js"></script>
-  </body>
+
+      <div class="faq-grid">
+
+
+        <!-- FAQ 1 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-calendar-check"></i>
+              Do you accept reservations?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. We accept reservations for lunch, dinner,
+              special occasions, and private dining.
+              We recommend booking in advance, especially
+              during weekends and busy hours.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 2 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-bag-shopping"></i>
+              Do you offer takeaway?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. Most items from our menu are available
+              for takeaway. You can contact us or visit the
+              restaurant to place your takeaway order.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 3 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-truck"></i>
+              Do you provide delivery?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. We provide delivery for selected areas.
+              You can also use our online ordering option
+              to place your delivery order.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 4 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-leaf"></i>
+              Do you have vegetarian options?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. We offer a variety of vegetarian dishes,
+              including pizzas, pasta, salads, sides,
+              and selected desserts.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 5 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-certificate"></i>
+              Do you have halal options?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. We offer halal food options.
+              If you have specific dietary requirements,
+              please contact our team before placing your order.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 6 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-door-open"></i>
+              Do you have private dining?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. Private dining arrangements are available
+              for celebrations, business dinners, family events,
+              and other special occasions.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 7 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-users"></i>
+              Do you accommodate large groups?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. We welcome large groups and family gatherings.
+              For larger parties, advance reservations are recommended
+              so we can arrange suitable seating.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 8 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-champagne-glasses"></i>
+              Do you offer catering?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. Taste Haven offers catering services for
+              corporate events, weddings, birthdays, family
+              gatherings, and other special occasions.
+              Custom catering packages are also available.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 9 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-clock"></i>
+              What are your opening hours?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Monday to Friday:
+              10:00 AM - 11:00 PM.
+              Saturday and Sunday:
+              9:00 AM - 12:00 AM.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- FAQ 10 -->
+
+        <div class="faq-item">
+
+          <button
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>
+              <i class="fa-solid fa-square-parking"></i>
+              Is parking available?
+            </span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+          </button>
+
+
+          <div class="faq-answer hidden">
+
+            <p>
+              Yes. Parking facilities are available for
+              our guests. Please contact our restaurant team
+              if you need additional parking information.
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         STILL HAVE QUESTIONS
+    ========================================== -->
+
+    <section class="section container">
+
+      <div class="cta-banner">
+
+        <div>
+
+          <p class="eyebrow">
+            Still have questions?
+          </p>
+
+          <h2>
+            We're Happy to Help
+          </h2>
+
+          <p>
+            If you cannot find the answer you're looking for,
+            feel free to contact our team.
+          </p>
+
+        </div>
+
+
+        <a
+          class="btn btn-light"
+          href="contact.html"
+        >
+          Contact Us
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================
+       NEWSLETTER
+  ========================================== -->
+
+  <section class="newsletter container">
+
+    <h2>
+      Join Our Newsletter
+    </h2>
+
+    <p>
+      Stay updated with our latest offers and delicious recipes.
+    </p>
+
+
+    <form id="newsletterForm">
+
+      <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your Email Address"
+        required
+      />
+
+
+      <button
+        class="btn btn-primary"
+        type="submit"
+      >
+        Subscribe
+      </button>
+
+    </form>
+
+  </section>
+
+
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+  <footer>
+
+    <div class="container footer-grid">
+
+
+      <!-- Restaurant Info -->
+
+      <div class="footer-box">
+
+        <h3>
+          Taste Haven
+        </h3>
+
+        <p>
+          Comfort food, crafted with care
+          and served with heart.
+        </p>
+
+      </div>
+
+
+
+      <!-- Quick Links -->
+
+      <div class="footer-box">
+
+        <h3>
+          Quick Links
+        </h3>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+
+          <a href="about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+
+          <a href="menu.html">
+            <i class="fa-solid fa-utensils"></i>
+            Menu
+          </a>
+
+          <a href="specials.html">
+            <i class="fa-solid fa-star"></i>
+            Specials
+          </a>
+
+          <a href="gallery.html">
+            <i class="fa-solid fa-image"></i>
+            Gallery
+          </a>
+
+          <a href="events.html">
+            <i class="fa-solid fa-calendar-days"></i>
+            Events
+          </a>
+
+          <a href="contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contact
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Opening Hours -->
+
+      <div class="footer-box">
+
+        <h3>
+          Opening Hours
+        </h3>
+
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Monday - Friday
+        </p>
+
+        <p>
+          10:00 AM - 11:00 PM
+        </p>
+
+
+        <br />
+
+
+        <p>
+          <i class="fa-regular fa-clock"></i>
+          Saturday - Sunday
+        </p>
+
+        <p>
+          9:00 AM - 12:00 AM
+        </p>
+
+      </div>
+
+
+
+      <!-- Follow Us -->
+
+      <div class="footer-box">
+
+        <h3>
+          Follow Us
+        </h3>
+
+
+        <div class="footer-links">
+
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+          </a>
+
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+            Instagram
+          </a>
+
+          <a href="#">
+            <i class="fab fa-x-twitter"></i>
+            Twitter
+          </a>
+
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+            YouTube
+          </a>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <!-- Footer Bottom -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Taste Haven Restaurant.
+        All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script src="./script.js"></script>
+
+</body>
+
 </html>

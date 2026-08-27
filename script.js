@@ -167,3 +167,75 @@ window.addEventListener("scroll", ()=>{
 });
 
 }
+/* =========================================
+   GALLERY FILTER
+========================================= */
+
+const galleryFilters = document.querySelectorAll(".gallery-filter");
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+galleryFilters.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const filter = button.getAttribute("data-filter");
+
+    // Remove active class from all buttons
+    galleryFilters.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+
+    // Add active class to clicked button
+    button.classList.add("active");
+
+    // Filter gallery items
+    galleryItems.forEach((item) => {
+
+      const category = item.getAttribute("data-category");
+
+      if (filter === "all" || category === filter) {
+        item.classList.remove("hide");
+      } else {
+        item.classList.add("hide");
+      }
+
+    });
+
+  });
+
+});
+/* =========================================
+   CATERING QUOTE FORM
+========================================= */
+
+const cateringForm = document.getElementById("cateringForm");
+
+if (cateringForm) {
+
+  cateringForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const cateringMessage =
+      document.getElementById("cateringMessage");
+
+    if (cateringMessage) {
+
+      cateringMessage.style.display = "block";
+
+      cateringMessage.innerHTML =
+        "Thank you! Your catering quote request has been submitted successfully. We will contact you soon.";
+
+    } else {
+
+      alert(
+        "Thank you! Your catering quote request has been submitted successfully."
+      );
+
+    }
+
+    cateringForm.reset();
+
+  });
+
+}
