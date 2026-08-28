@@ -3599,3 +3599,19 @@ footer {
   }
 
 }
+/* Fix navbar visibility and clickability */
+.site-header {
+    position: relative !important;
+    z-index: 9999 !important;
+}
+
+.site-nav {
+    position: relative !important;
+    z-index: 10000 !important;
+}
+
+.site-nav .nav-link {
+    position: relative !important;
+    z-index: 10001 !important;
+    pointer-events: auto !important;
+}
