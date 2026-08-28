@@ -239,3 +239,242 @@ if (cateringForm) {
   });
 
 }
+/* =========================================
+   ORDER ONLINE FUNCTIONALITY
+========================================= */
+
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const cartItems = document.getElementById("cartItems");
+const cartCount = document.getElementById("cartCount");
+const cartTotal = document.getElementById("cartTotal");
+const checkoutBtn = document.getElementById("checkoutBtn");
+const checkoutSection = document.getElementById("checkoutSection");
+const checkoutForm = document.getElementById("checkoutForm");
+const orderConfirmation = document.getElementById("orderConfirmation");
+const orderNumber = document.getElementById("orderNumber");
+
+let cart = [];
+
+
+/* ADD TO CART */
+
+addToCartButtons.forEach((button) => {
+
+  button.addEventListener("click", () => {
+
+    const name = button.dataset.name;
+    const price = parseFloat(button.dataset.price);
+
+    const existingItem = cart.find((item) => item.name === name);
+
+    if (existingItem) {
+
+      existingItem.quantity++;
+
+    } else {
+
+      cart.push({
+        name: name,
+        price: price,
+        quantity: 1
+      });
+
+    }
+
+    updateCart();
+
+  });
+
+});
+
+
+/* UPDATE CART */
+
+function updateCart() {
+
+  if (!cartItems || !cartCount || !cartTotal) return;
+
+  cartItems.innerHTML = "";
+
+  if (cart.length === 0) {
+
+    cartItems.innerHTML = `
+      <p class="empty-cart">
+        Your cart is empty. Add some delicious items to get started.
+      </p>
+    `;
+
+    cartCount.textContent = "0";
+    cartTotal.textContent = "$0.00";
+
+    return;
+  }
+
+  let total = 0;
+  let totalItems = 0;
+
+  cart.forEach((item, index) => {
+
+    const itemTotal = item.price * item.quantity;
+
+    total += itemTotal;
+    totalItems += item.quantity;
+
+    cartItems.innerHTML += `
+
+      <div class="cart-item">
+
+        <div>
+
+          <strong>${item.name}</strong>
+
+          <p>
+            $${item.price.toFixed(2)} × ${item.quantity}
+          </p>
+
+        </div>
+
+        <div>
+
+          <strong>
+            $${itemTotal.toFixed(2)}
+          </strong>
+
+          <button
+            type="button"
+            class="remove-item"
+            data-index="${index}"
+          >
+            Remove
+          </button>
+
+        </div>
+
+      </div>
+
+    `;
+
+  });
+
+  cartCount.textContent = totalItems;
+
+  cartTotal.textContent = "$" + total.toFixed(2);
+
+
+  /* REMOVE ITEM */
+
+  const removeButtons = document.querySelectorAll(".remove-item");
+
+  removeButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+      const index = button.dataset.index;
+
+      cart.splice(index, 1);
+
+      updateCart();
+
+    });
+
+  });
+
+}
+
+
+/* PROCEED TO CHECKOUT */
+
+if (checkoutBtn) {
+
+  checkoutBtn.addEventListener("click", () => {
+
+    if (cart.length === 0) {
+
+      alert("Please add at least one item to your cart.");
+
+      return;
+
+    }
+
+    if (checkoutSection) {
+
+      checkoutSection.style.display = "block";
+
+      checkoutSection.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    }
+
+  });
+
+}
+
+
+/* CONFIRM ORDER */
+
+if (checkoutForm) {
+
+  checkoutForm.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    if (cart.length === 0) {
+
+      alert("Your cart is empty.");
+
+      return;
+
+    }
+
+    const orderType = document.getElementById("orderType");
+
+    if (!orderType || orderType.value === "") {
+
+      alert("Please select Delivery or Pickup.");
+
+      return;
+
+    }
+
+
+    /* GENERATE ORDER NUMBER */
+
+    const generatedOrderNumber =
+      "TH-" + Math.floor(100000 + Math.random() * 900000);
+
+
+    if (orderNumber) {
+
+      orderNumber.textContent = generatedOrderNumber;
+
+    }
+
+
+    /* HIDE FORM */
+
+    checkoutForm.style.display = "none";
+
+
+    /* SHOW CONFIRMATION */
+
+    if (orderConfirmation) {
+
+      orderConfirmation.style.display = "block";
+
+      orderConfirmation.scrollIntoView({
+        behavior: "smooth"
+      });
+
+    }
+
+
+    /* EMPTY CART */
+
+    cart = [];
+
+    updateCart();
+
+  });
+
+}
